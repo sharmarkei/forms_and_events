@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Workshop</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="sample_form">
+      <fieldset>
+        <label for="first">First Name:</label>
+        <input type="text" name="first" placeholder="enter your first name" required>
+      </fieldset>
+
+      <fieldset>
+      <label for="last" >Last Name:</label>
+      <input type="text" name="last" placeholder="enter your last name" required>
+      </fieldset>
+
+      <fieldset>
+        <label for="enrolled">Currently enrolled in classes?</label>
+        <input type="checkbox" name="enrolled" value="enrolled">
+      </fieldset>
+
+      <fieldset>
+        <label for="future_classes">Interested in future classes?</label>
+        <input type="radio" name="future_classes" value="yes">Yes
+        <input type="radio" name="future_classes" value="no">No
+      </fieldset>
+
+      <button  id=" submit-btn" type="submit">Add Student!</button>
+    </form>
+
+    <section id="students">
+      <table>
+        <thead>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Enrolled</td>
+          <td>Interested in future classes?</td>
+        </thead>
+        <tbody id="student_table">
+          <!--student table data goes here-->
+        </tbody>
+      </table>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
